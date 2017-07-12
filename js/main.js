@@ -21,13 +21,11 @@ $('#session-down').on('click', sessionDown);
 $('#break-up').on('click', breakUp);
 $('#break-down').on('click', breakDown);
 
-$('#countdown').on('click', changeTimer);
+
 $('.start').on('click', startCountdown);
 $('.pause').on('click', pauseCountdown);
 $('.stop').on('click', stopCountdown);
 $('.reset').on('click', resetCountdown);
-
-
 
 });
 
@@ -47,7 +45,7 @@ function setVariables(currentSeconds) {
 		hours = 0;
 		seconds = currentSeconds
 	}
-	if ( minutes % 60 != 0) {
+	if ( minutes / 60 >= 1) {
 		hours = Math.floor(minutes / 60);
 		minutes = minutes % 60;
 	} else {
