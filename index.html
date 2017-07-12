@@ -1,0 +1,46 @@
+<!--
+Pomodoro Timer
+--> 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Timer</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<h1>Pomodoro Timer</h1>
+	<div class="settings">
+		<div class="session">
+			<p>Session</p>
+			<div class="session-edit">
+				<input type="image" src="images/up.png" id="session-up">
+				<span id="session-time">25</span>
+				<input type="image" src="images/down.png" id="session-down">
+			</div>
+		</div>
+		<div class="break">
+			<p>Break</p>
+			<div class="break-edit">
+				<input type="image" src="images/up.png" id="break-up">
+				<span id="break-time">5</span>
+				<input type="image" src="images/down.png" id="break-down">
+			</div>
+		</div>
+	</div>
+	<div class="timer">
+		<input type="image" src="images/play.png" name="start" class="start">
+		<input type="image" src="images/pause.png" name="pause" class="pause">
+		<input type="image" src="images/stop.png" name="stop" class="stop">
+		<input type="image" src="images/reset.png" name="reset" class="reset">
+		<div id="countdown" class="work">
+			<p id="current-timer"></p>
+			<span class="time"></span>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src='js/main.js'></script>
+</body>
+</html>

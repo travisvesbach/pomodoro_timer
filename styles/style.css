@@ -1,0 +1,44 @@
+/*
+Pomodoro Timer
+*/ 
+
+body {
+	background-color: lightgrey;
+}
+
+
+.settings {
+	background-color: darkgrey;
+	height: 200px;
+	width: 500px;
+	margin: 100px auto 50px auto;
+}
+
+.timer {
+	background-color: darkgrey;
+	height: 300px;
+	width: 500px;
+	margin: auto;
+}
+
+input {
+	height: 40px;
+	width: 40px;
+}
+
+.session, .break {
+	display: inline-block;
+	height: 200px;
+	width: 245px;
+	text-align: center;
+	font-size: 35px;
+}
+
+.break {
+	float: right;
+}
+
+.session-edit, .break-edit {
+	display: inline-flex;
+	align-items: center;
+}
