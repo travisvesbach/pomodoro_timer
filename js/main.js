@@ -162,7 +162,9 @@ function breakDown() {
 
 //to start the timer
 function startCountdown() {
-	interval = setInterval(countdown, 1000);
+	if (interval == false || interval == 'pause') {
+		interval = setInterval(countdown, 1000);
+	}
 }
 
 //lose 1 second every second, update the display, change timer when it hits 0
@@ -177,6 +179,7 @@ function countdown() {
 //to pause the timer
 function pauseCountdown() {
 	clearInterval(interval);
+	interval = 'pause';
 }
 
 //to stop the timer and reset it to its starting value
