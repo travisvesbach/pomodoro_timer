@@ -184,6 +184,9 @@ function pauseCountdown() {
 function stopCountdown() {
 	clearInterval(interval);
 	interval = false;
+	if($('#countdown').hasClass('rest') ) {
+		changeTimer();
+	}
 	setTimer();
 }
 
@@ -193,6 +196,9 @@ function resetCountdown() {
 	breakTimer = 5;
 	clearInterval(interval);
 	interval = false;
+	if($('#countdown').hasClass('rest') ) {
+		changeTimer();
+	}
 	setTimer();
 	$('#break-time').text(breakTimer);
 	$('#session-time').text(sessionTimer);
